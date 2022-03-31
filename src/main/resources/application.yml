@@ -1,0 +1,13 @@
+spring:
+  application.name: kotlin-demo
+  kafka:
+    bootstrap-servers:
+      - kafka:29092
+    producer:
+      bootstrap-servers:
+        - kafka:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      acks: 0
+      properties:
+        schema.registry.url: http://schema-registry:8081

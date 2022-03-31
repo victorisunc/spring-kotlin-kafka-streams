@@ -1,0 +1,11 @@
+{
+ "namespace": "com.demo.sse.model",
+ "type": "record",
+ "name": "VehicleStats",
+ "fields": [
+   { "name": "vin", "type": "string"},
+   { "name": "lat", "type": "double"},
+   { "name": "lon", "type": "double"},
+   { "name": "speed", "type": "double", "default":  0}
+ ]
+}
